@@ -16,6 +16,10 @@
 
 	<!-- Sounds Page -->
 	<div id="sounds_page" class="col" style="padding-top: 4vh;" style="">
+		<!-- Play / Pause Btn -->
+		<div id="sounds_play_btn_area" style="position: fixed; top: 70vh; left: 76vw;">
+			<i id="sounds_play_btn_icon" class="material-icons playBtn" style="font-size: 4em; color: #fa5555;" onclick="alterSoundsPlay(id)"> play_circle_outline </i>
+		</div>
 
 		<!-- Melody -->
 		<h2 style="margin-bottom: 1vh;"> Melody </h2>
@@ -114,6 +118,11 @@
 			<p class="link"> Reset </p>
 		</div>
 
+		<!-- Play / Pause Btn -->
+		<div id=mix_play_btn_area" style="position: fixed; top: 70vh; left: 76vw;">
+			<i id="mix_play_btn_icon" class="material-icons playBtn" style="font-size: 4em; color: #fa5555;" onclick="alterSoundsPlay(id)"> play_circle_outline </i>
+		</div>
+
 		<!-- Melody -->
 		<h2 id="melody_mix_txt" class="mixer_header_txt" style="margin-bottom: 1vh;"> Melody </h2>
 
@@ -176,8 +185,8 @@ s		</div>
 			<i style="margin-left: 2vh;" class="material-icons btn "> keyboard_arrow_right</i>
 		</div>
 
-		<div class="row" style="flex-wrap: wrap; padding: 2vw;">
-			<p class="structure_section structure_section_selected"> Intro </p>
+		<div class="row" style="flex-wrap: wrap; padding-bottom: 1vw; padding-top: 0;">
+			<p  class="structure_section structure_section_selected"> Intro </p>
 			<p class="skinny" style="padding: 1vw;"> > </p>
 			<p class="structure_section"> Chorus </p>
 			<p class="skinny" style="padding: 1vw;"> > </p>
@@ -237,7 +246,14 @@ s		</div>
 			<input type="radio" checked/>
 			<p  class="skinny" style="margin-left: 1vw;"> 8 Bars </p>
 		</div>
-		
+
+		<!-- play pause ff rr controls -->
+		<div class="row" style="justify-content: space-evenly; margin-top: 4vh;">
+			<i class="material-icons playControls"> replay_10 </i>
+			<i id="structure_play_btn" class="material-icons playControls" onclick="alterSoundsPlay(id)"> play_circle_outline </i>
+			<i class="material-icons playControls"> forward_10 </i>
+
+		</div>		
 
 	</div> <!-- end structure page -->
 
@@ -426,6 +442,12 @@ s		</div>
 		margin: 0;
 		padding-top: 0;
 	}
+	.playBtn{cursor: pointer;}
+	.playControls{
+		cursor: pointer;
+		font-size: 3em;
+		color: #fa5555;
+	}
 
 </style>
 <script type="text/javascript">
@@ -452,7 +474,7 @@ s		</div>
 
 	function showStructurePage(){
 		collapsePages()
-		document.getElementById('header').style.marginBottom = '30vh'
+		document.getElementById('header').style.marginBottom = '33vh'
 		document.getElementById('structure_page').style.display = 'flex'
 	}
 
@@ -500,6 +522,22 @@ s		</div>
 		}
 		else
 			curr_icon.innerHTML = 'volume_up'
+	}
+
+	function alterSoundsPlay(id){
+		if(document.getElementById(id).innerHTML.indexOf('play') > -1)
+		{
+			//play...
+			document.getElementById(id).innerHTML = 'pause_circle_outline';
+
+			document.getElementById('audioElement').play()
+		}
+		else{
+			// pause
+			document.getElementById(id).innerHTML = 'play_circle_outline';
+			document.getElementById('audioElement').pause()
+
+		}
 	}
 
 </script>
