@@ -308,11 +308,14 @@ s		</div>
 	*{
 		box-sizing: border-box;
 		font-family: 'Quicksand', sans-serif;
-		user-select: none; /* supported by Chrome and Opera */
-	   -webkit-user-select: none; /* Safari */
-	   -moz-user-select: none; /* Firefox */
-	   -ms-user-select: none; /* Internet Explorer/Edge */
+		-webkit-tap-highlight-color:  rgba(255, 255, 255, 0) !important; 
+		user-select: none !important; /* supported by Chrome and Opera */
+	   -webkit-user-select: none !important; /* Safari */
+	   -moz-user-select: none !important; /* Firefox */
+	   -ms-user-select: none !important; /* Internet Explorer/Edge */
 	}
+	:selection { background: transparent; } 
+	::-moz-selection { background: transparent; }
 	body{
 		margin:0;
 		overflow: hidden;
@@ -427,9 +430,6 @@ s		</div>
 </style>
 <script type="text/javascript">
 
-	window.load(()=>{
-		alert('hi')
-	})
 	
 	function collapsePages(){
 		document.getElementById('sounds_page').style.display = 'none'
