@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Studio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Header -->
+	<div id='header' class='header' style="margin-bottom: 30vh;">
+		<h1> My Studio </h1>
+	</div>
+
+	<!-- Sounds Page -->
+	<div id="sounds_page" class="col" style="padding-top: 4vh;" style="">
+
+		<!-- Melody -->
+		<h2 style="margin-bottom: 1vh;"> Melody </h2>
+
+		<div class="row melody_select" style="padding-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn melody_arrow"> keyboard_arrow_left</i>
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Got Gas prod. Roseli </p>
+			<i style="margin-left: 2vh;" class="material-icons btn melody_arrow"> keyboard_arrow_right</i>
+		</div>
+
+		<!-- Clap -->
+		<h2 style="margin-bottom: 1vh; "> Clap </h2>
+		<div class="row clap_select" style="margin-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn clap_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/b5FmJLB/sound.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Cxdy Clap </p>
+			<i style="margin-left: 2vh;" class="material-icons btn clap_arrow"> keyboard_arrow_right</i>
+		</div>
+		<div class="row clap_select" style="margin-top: 1vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn clap_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/tYNJ9RM/rhythm.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> New Bounce </p>
+			<i style="margin-left: 2vh;" class="material-icons btn clap_arrow"> keyboard_arrow_right</i>
+		</div>
+
+		<!-- Percs -->
+		<h2 style=" padding-top: 0vh; margin-bottom: 1vh;"> Percs </h2>
+
+		<div class="row perc_select" style="padding-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn perc_arrow"> keyboard_arrow_left</i>
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Slushi prod. Jozwyn </p>
+			<i style="margin-left: 2vh;" class="material-icons btn perc_arrow"> keyboard_arrow_right</i>
+		</div>
+
+		<!-- Cymbals -->
+		<h2 style="margin-bottom: 1vh;"> Cymbals </h2>
+
+		<div class="row cymbal_select" style="padding-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn cymbal_arrow"> keyboard_arrow_left</i>
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Block Vibe </p>
+			<i style="margin-left: 2vh;" class="material-icons btn  cymbal_arrow"> keyboard_arrow_right</i>
+		</div>
+
+		<!-- Kicks -->
+		<h2 style=" padding-top: 0vh; margin-bottom: 1vh;"> Kick </h2>
+
+		<div class="row kick_select" style="margin-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn kick_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/b5FmJLB/sound.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Wunda kick </p>
+			<i style="margin-left: 2vh;" class="material-icons btn kick_arrow"> keyboard_arrow_right</i>
+		</div>
+		<div class="row kick_select" style="margin-top: 1vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn kick_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/tYNJ9RM/rhythm.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Spacey </p>
+			<i style="margin-left: 2vh;" class="material-icons btn kick_arrow"> keyboard_arrow_right</i>
+		</div>
+
+		<!-- Bass -->
+		<h2 style=" padding-top: 0vh; margin-bottom: 1vh;"> Bass </h2>
+
+		<div class="row bass_select" style="margin-bottom: 0vh;">
+			<i style="margin-right: 2vh;" class="material-icons btn bass_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/b5FmJLB/sound.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Spinz 808 </p>
+			<i style="margin-left: 2vh;" class="material-icons btn bass_arrow"> keyboard_arrow_right</i>
+		</div>
+		<div class="row bass_select" style="margin-top: 1vh;"> 
+			<i style="margin-right: 2vh;" class="material-icons btn bass_arrow"> keyboard_arrow_left</i>
+
+			<img class='iconSmall' style="margin-right: 1vw;" src="https://i.ibb.co/tYNJ9RM/rhythm.png"/>
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Chunkin </p>
+			<i style="margin-left: 2vh;" class="material-icons btn bass_arrow"> keyboard_arrow_right</i>
+		</div>
+
+	</div> <!-- end sounds page-->
+
+	<!-- Mix Page -->
+	<div id="mix_page" class="col btn" style="padding-top: 2vh; display: none;">
+
+		<!-- reset option -->	
+		<div class="col" style="position: fixed; top:17vh; left:10vw;" onclick="resetMixer()">
+			<i class="material-icons btn"> loop </i>
+			<p class="link"> Reset </p>
+		</div>
+
+		<!-- Melody -->
+		<h2 id="melody_mix_txt" class="mixer_header_txt" style="margin-bottom: 1vh;"> Melody </h2>
+
+		<div class="row melody_select" style="padding-bottom: 0vh;">
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Got Gas prod. Roseli </p>
+s		</div>
+		<input id="melody_mix" type="range" min=0 max=100 value=80 name="melody_mix"/ oninput="showMixInput(id)">
+
+		<!-- Clap -->
+		<h2 id="clap_mix_txt" class="mixer_header_txt" style="margin-bottom: 1vh; margin-top: 1vh;"> Clap </h2>
+		<div class="row clap_select" style="margin-bottom: 0vh;">
+
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Cxdy Clap </p>
+		</div>
+		<input id="clap_mix" type="range" min=0 max=100 value=80 name="clap_mix"/ oninput="showMixInput(id)">
+
+		<!-- Percs -->
+		<h2 id="perc_mix_txt" class="mixer_header_txt" style=" padding-top: 0vh; margin-bottom: 1vh; margin-top: 1vh;"> Percs </h2>
+
+		<div class="row perc_select" style="padding-bottom: 0vh;">
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Slushi prod. Jozwyn </p>
+		</div>
+		<input id="perc_mix" type="range" min=0 max=100 value=80 name="perc_mix"/ oninput="showMixInput(id)">
+
+		<!-- Cymbals -->
+		<h2 id="cymbal_mix_txt" class="mixer_header_txt" style="margin-bottom: 1vh; margin-top: 1vh;"> Cymbals </h2>
+
+		<div class="row cymbal_select" style="padding-bottom: 0vh;">
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Block Vibe </p>
+		</div>
+		<input id="cymbal_mix" type="range" min=0 max=100 value=80 name="cymbal_mix"/ oninput="showMixInput(id)">
+
+
+		<!-- Kicks -->
+		<h2  id="kick_mix_txt" class="mixer_header_txt" style=" padding-top: 0vh; margin-bottom: 1vh; margin-top: 1vh;"> Kick </h2>
+		<div class="row kick_select" style="margin-bottom: 0vh;">
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Wunda kick </p>
+		</div>
+		<input id="kick_mix" type="range" min=0 max=100 value=80 name="kick_mix"/ oninput="showMixInput(id)">
+
+
+		<!-- Bass -->
+		<h2 id="bass_mix_txt"  class="mixer_header_txt" style=" padding-top: 0vh; margin-bottom: 1vh; margin-top: 1vh;"> Bass </h2>
+		<div class="row bass_select" style="margin-bottom: 0vh;">
+			<p style="margin-top: 0vh;margin-bottom: 0.1vh;"> Spinz 808 </p>
+		</div>
+		<input id="bass_mix" type="range" min=0 max=100 value=80 name="bass_mix"/ oninput="showMixInput(id)">
+
+
+	</div> <!-- end mix page-->
+
+	<!-- Structure Page -->
+	<div id="structure_page" class="col" style="padding-top: 0vh; display: none;">
+
+		<h2> Structure </h2>
+
+		<div class="row structure_select">
+			<i style="margin-right: 2vh;" class="material-icons btn "> keyboard_arrow_left</i>
+			<h3 style="margin-top:0; margin-bottom: 0;"> Billboard Hit </h3>
+			<i style="margin-left: 2vh;" class="material-icons btn "> keyboard_arrow_right</i>
+		</div>
+
+		<div class="row" style="flex-wrap: wrap; padding: 2vw;">
+			<p class="structure_section structure_section_selected"> Intro </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Chorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Verse </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Prechorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Chorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Chorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Verse </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Prechorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Chorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Chorus </p>
+			<p class="skinny" style="padding: 1vw;"> > </p>
+			<p class="structure_section"> Outro </p>
+		</div>
+
+		<h3 style="text-decoration: underline;"> Intro </h3>
+
+		<div class="col" style="margin-top: 1vh;">
+			<div id="melody_vol_area" class="row" style="padding-top: 6vh;" onclick="alterVol(id)"> 
+				<i id="melody_vol_icon" class="material-icons small btn"> volume_up </i>
+				<p id="melody_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Melody </p>
+			</div>
+			<div id="clap_vol_area" class="row" style="padding-top: 1vh;" onclick="alterVol(id)"> 
+				<i id="clap_vol_icon" class="material-icons small btn"> volume_off </i>
+				<p id="clap_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Clap </p>
+			</div>
+			<div id="percs_vol_area" class="row" style="padding-top: 1vh;" onclick="alterVol(id)"> 
+				<i id="percs_vol_icon" class="material-icons small btn"> volume_off </i>
+				<p id="percs_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Percs </p>
+			</div>
+			<div id="cymbals_vol_area" class="row" style="padding-top: 1vh;" onclick="alterVol(id)"> 
+				<i id="cymbals_vol_icon" class="material-icons small btn"> volume_off </i>
+				<p id="cymbals_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Cymbals </p>
+			</div>
+			<div id="kick_vol_area" class="row" style="padding-top: 1vh;" onclick="alterVol(id)"> 
+				<i id="kick_vol_icon" class="material-icons btn small"> volume_off </i>
+				<p id="kick_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Kicks </p>
+			</div>
+			<div id="bass_vol_area" class="row" style="padding-top: 1vh;" onclick="alterVol(id)"> 
+				<i id="bass_vol_icon" class="material-icons btn small"> volume_off </i>
+				<p id="bass_vol_txt" class="link skinny" style="padding-left: 2vw; padding-top: 0;"> Bass </p>
+			</div>
+		</div>
+
+		<div class="row" style="width: 150%; margin-top: 10vh;">
+			<input type="radio" />
+			<p class="skinny" style="margin-left: 1vw;"> 4 Bars </p>
+		</div>
+		<div class="row" style="width: 150%; padding-top: 1vh;">
+			<input type="radio" checked/>
+			<p  class="skinny" style="margin-left: 1vw;"> 8 Bars </p>
+		</div>
+		
+
+	</div> <!-- end structure page -->
+
+	<!-- Download Page -->
+	<div id="download_page" class="col" style="padding-top: 0vh; display: none;">
+
+			<h2> Download </h2>
+
+			<h3 class="skinny"> Melody </h3>
+			<p class="skinny" style="padding-bottom: 2vh;"> Got Gas prod. Roseli - $5 </p>
+
+			<h3 class="skinny"> Clap </h3>
+			<p class="skinny" style="padding-bottom: 1vh;"> Cxdy Clap - free </p>
+			<p class="skinny" style="padding-bottom: 2vh;"> New Bounce - free </p>
+
+			<h3 class="skinny"> Percs </h3>
+			<p class="skinny" style="padding-bottom: 2vh;"> Slushi prod. Jozwyn - $10 </p>
+
+			<h3 class="skinny"> Cymbals </h3>
+			<p class="skinny" style="padding-bottom: 2vh;"> Block Vibe - free </p>
+
+			<h3 class="skinny"> Kick </h3>
+			<p class="skinny" style="padding-bottom: 1vh;"> Wunda Kick - free </p>
+			<p class="skinny" style="padding-bottom: 2vh;"> Spacy - free </p>
+
+			<h3 class="skinny"> Bass </h3>
+			<p class="skinny" style="padding-bottom: 1vh;"> Spinz 808 - free </p>
+			<p class="skinny" style="padding-bottom: 2vh;"> Chunk - free </p>
+
+			<div class="row btn link">
+				<h3 style="border-style: solid; padding:2vh;"> Purchase - $15</h3>
+			</div>
+
+
+
+	</div> <!-- -end download page -->
+
+	<!-- Nav Options -->
+	<div id="nav_area" class="row footer" style="justify-content: space-evenly;">
+
+		<div class="col link" onclick="showSoundsPage()">
+			<img class='icon' src="https://i.ibb.co/b5FmJLB/sound.png"/>
+			<p class="icon "> Sounds </p>
+		</div>
+
+		<div class="col link" onclick="showMixPage()">
+			<img class='icon' src="https://i.ibb.co/7yV9Jmz/mix.png"/>
+			<p class="icon "> Mix </p>
+		</div>
+
+		<div class="col link" onclick="showStructurePage()">
+			<img class='icon' style="height: 6.5vh" src="https://i.ibb.co/3yqXLNC/structure.png"/>
+			<p class="icon "> Structure </p>
+		</div>
+		
+		<div class="col link" onclick="showDownloadPage()">
+			<img class='icon' src="https://i.ibb.co/YRnQb8B/download.png" alt="download" />
+			<p class="icon"> Download </p>
+		</div>
+		
+	</div>	
+
+	
+
+</body>
+</html>
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+		font-family: 'Quicksand', sans-serif;
+	}
+	body{
+		margin:0;
+		overflow: hidden;
+	}
+	.header{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fa5555;
+		padding: 0;
+		margin: 0;
+		color:white;
+	}
+	.row{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		flex-direction: row;
+	}
+	.col{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		height: 10vh;
+	}
+	.footer{
+		position: fixed;
+		top:90vh;
+		left:0;
+		background-color: white;
+	}
+	.footerTxt{
+		position: fixed;
+		top:90vh;
+		left:0;
+		background-color: white;
+	}
+	.icon{
+		width:5vh;
+		height:5vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.iconSmall{
+		width: 3vh;
+		height: 3vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.small{
+		font-size: 1.0em;
+	}
+	.link{}
+	.link:hover{
+		text-decoration: underline;
+		color:dodgerblue;
+		cursor: pointer;
+	}
+	.btn{
+		cursor: pointer;
+	}
+	.melody_arrow{ display: none;}
+	.melody_select{}
+	.melody_select:hover .melody_arrow{ display: block; }
+	.clap_arrow{ display: none;}
+	.clap_select{}
+	.clap_select:hover .clap_arrow{ display: block; }
+	.perc_arrow{ display: none;}
+	.perc_select{}
+	.perc_select:hover .perc_arrow{ display: block; }
+	.cymbal_arrow{ display: none;}
+	.cymbal_select{}
+	.cymbal_select:hover .cymbal_arrow{ display: block; }
+	.kick_arrow{ display: none;}
+	.kick_select{}
+	.kick_select:hover .kick_arrow{ display: block; }
+	.bass_arrow{ display: none;}
+	.bass_select{}
+	.bass_select:hover .bass_arrow{ display: block; }
+	
+	.structure_section{
+		border-style: solid;
+		border-radius: 5px;
+		padding-left: 1vh;
+		padding-right: 1vh;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin: 1vh;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+	}
+	.structure_section_selected{
+		background-color: white;
+		color: black;
+	}
+	.skinny{
+		margin: 0;
+		padding-top: 0;
+	}
+
+</style>
+<script type="text/javascript">
+
+	window.load(()=>{
+		alert('hi')
+	})
+	
+	function collapsePages(){
+		document.getElementById('sounds_page').style.display = 'none'
+		document.getElementById('mix_page').style.display = 'none'
+		document.getElementById('structure_page').style.display = 'none'
+		document.getElementById('download_page').style.display = 'none'
+	}
+
+	function showSoundsPage(){
+		collapsePages()
+		document.getElementById('header').style.marginBottom = '30vh'
+		document.getElementById('sounds_page').style.display = 'flex'
+	}
+
+	function showMixPage(){
+		collapsePages()
+		document.getElementById('header').style.marginBottom = '30vh'
+		document.getElementById('mix_page').style.display = 'flex'
+	}
+
+	function showStructurePage(){
+		collapsePages()
+		document.getElementById('header').style.marginBottom = '27vh'
+		document.getElementById('structure_page').style.display = 'flex'
+	}
+
+	function showDownloadPage(){
+		collapsePages()
+		document.getElementById('header').style.marginBottom = '33vh'
+		document.getElementById('download_page').style.display = 'flex'
+	}
+
+	function showMixInput(id){
+		var headTxt = document.getElementById(id + '_txt').innerHTML
+		if(headTxt.indexOf('-') > -1){
+			headTxt = headTxt.substring(0, headTxt.indexOf('-')-1)
+		}
+		var mixTxt = document.getElementById(id).value + '%'
+		document.getElementById(id + '_txt').innerHTML = headTxt + ' - ' + mixTxt
+		
+	}
+
+	function resetMixer(){
+		mixer_headers = document.getElementsByClassName('mixer_header_txt')
+
+		for(var i = 0; i < mixer_headers.length; i++){
+			var current_header = document.getElementById(mixer_headers[i].id).innerHTML
+
+			if(current_header.indexOf('-') == -1)
+				continue
+
+			current_header = current_header.substring(0, current_header.indexOf(' - '))
+
+			document.getElementById(mixer_headers[i].id).innerHTML = current_header  
+
+			var current_mix_input_id = mixer_headers[i].id.substring(0, mixer_headers[i].id.indexOf('_txt'))
+
+			document.getElementById(current_mix_input_id).value = 80
+
+		}
+	}
+
+	function alterVol(id){
+		console.log(id)
+		var curr_icon = document.getElementById(id.substring(0, id.indexOf('_area')) + '_icon')
+		if(curr_icon.innerHTML == 'volume_up'){
+			curr_icon.innerHTML = 'volume_off'
+		}
+		else
+			curr_icon.innerHTML = 'volume_up'
+	}
+
+</script>
